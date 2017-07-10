@@ -93,6 +93,7 @@
       
       
 <h3> Error Handling</h3> 
+   
    - Dont Show server side Error codes and stack traces.
    
 <h3> SQL Injection</h3> 
