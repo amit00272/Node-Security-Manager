@@ -2,7 +2,7 @@
 
 <h3>Use TLS (Transport Layer Security)</h3>
   
-  * We can Use Free class 1 certificates to implements Https from [StartSSL]('http://www.startssl.com/')
+  * We can Use Free class 1 certificates to implements Https from [StartSSL](http://www.startssl.com/)
 
 <h3>Cookies Should be Secure</h3>
    
