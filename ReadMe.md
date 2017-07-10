@@ -29,8 +29,8 @@
          $ npm install --save helmet
    * Use this to manage and hide your <b>headers</b> like <b>x-powered-by</b>  
         
-           var helmet = require('helmet')
-           app.use(helmet())
+         var helmet = require('helmet')
+         app.use(helmet())
 
       `Note: Disabling the X-Powered-By header does not prevent a sophisticated attacker from determining that an app is running Express. It may discourage a casual exploit, but there are other ways to determine an app is running Express.`    
    
@@ -43,12 +43,12 @@
  <h3>Ensure Your dependencies are secure  </h3> 
   * By instating <b>NSP(Node Security Project)</b> and using .We can check our dependency.<br> 
            
-           $ npm i nsp -g
-           $ nsp check
-           $ npm install -g snyk
-           $ cd your-app
-           $ snyk test
-           $ snyk wizard
+        $ npm i nsp -g
+        $ nsp check
+        $ npm install -g snyk
+        $ cd your-app
+        $ snyk test
+        $ snyk wizard
    
 <h3> Authentication for Brute Force Protection</h3> 
    
