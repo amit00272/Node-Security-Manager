@@ -63,7 +63,6 @@
 <h3> Secure Session Management</h3> 
 
   * You can use [express-session](https://www.npmjs.com/package/express-session) package for the same.
-  * You can use [express-session](https://www.npmjs.com/package/express-session) package for the same.
 
 <h3> Command Injection </h3> 
 
