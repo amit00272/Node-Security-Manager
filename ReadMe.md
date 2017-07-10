@@ -43,7 +43,7 @@
  <h3>Ensure Your dependencies are secure  </h3> 
  
   * By instating [NSP](https://www.npmjs.com/package/nsp) <b>(Node Security Project)</b> and using .We can check our dependency.<br> 
-           
+            
         $ npm i nsp -g
         $ nsp check
         $ npm install -g snyk
