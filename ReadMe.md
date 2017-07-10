@@ -23,11 +23,14 @@
           res.cookie('sessionid', '1', { expires : expiryDate });
       
 <h3>Set HTTP headers appropriately</h3>
+
    * Install Package like Helmet
-     `$ npm install --save helmet`
+     
+         $ npm install --save helmet
    * Use this to manage and hide your <b>headers</b> like <b>x-powered-by</b>  
-     `var helmet = require('helmet')`<br>
-     `app.use(helmet())`
+        
+           var helmet = require('helmet')
+           app.use(helmet())
 
       `Note: Disabling the X-Powered-By header does not prevent a sophisticated attacker from determining that an app is running Express. It may discourage a casual exploit, but there are other ways to determine an app is running Express.`    
    
@@ -39,43 +42,48 @@
    
  <h3>Ensure Your dependencies are secure  </h3> 
   * By instating <b>NSP(Node Security Project)</b> and using .We can check our dependency.<br> 
-   `$ npm i nsp -g`<br>
-   `$ nsp check`<br>
-   `$ npm install -g snyk`<br>
-   `$ cd your-app`<br>
-   `$ snyk test`<br>
-   `$ snyk wizard`<br>
+           
+           $ npm i nsp -g
+           $ nsp check
+           $ npm install -g snyk
+           $ cd your-app
+           $ snyk test
+           $ snyk wizard
    
 <h3> Authentication for Brute Force Protection</h3> 
+   
    * To prevent your application from these kind of attacks .We can use [RateLimiter]('https://www.npmjs.com/package/ratelimiter')  
-     ````javascript
-     var limit = new Limiter({ id: email, db: db });
      
-     limit.get(function(err, limit) {
+            var limit = new Limiter({ id: email, db: db });
      
-     });
-     ````    
-
+                limit.get(function(err, limit) {
+     
+            });
+     
 <h3> Secure Session Management</h3> 
+
   * You can use `express-session` package for the same.
 
 <h3> Command Injection </h3> 
+
   * User can inject command like:-
   
-  ````
-  https://example.com/downloads?file=user1.txt
-  https://example.com/downloads?file=%3Bcat%20/etc/passwd
-  ````
+
+        https://example.com/downloads?file=user1.txt
+        https://example.com/downloads?file=%3Bcat%20/etc/passwd
+ 
   * To prevent command injection you should always filter and sanitize user input.
   
   
 <h3> Secure Data Transmission</h3> 
+
  * Check the followiing
    - SSL Version
    - Algorithms
    - Key length
 
 <h3> Regular Expression </h3> 
+
  * Evil like regular expression which contains:-
    - Grouping With repeation
    - Inside the repeated group
@@ -88,10 +96,13 @@
    - Dont Show server side Error codes and stack traces.
    
 <h3> SQL Injection</h3> 
+
   * Stop Injection like :-
-    `select title, author from books where id=2 or 1=1`
+  
+        select title, author from books where id=2 or 1=1
    
 <h3> CSRF (Cross-Site Request Forgery)</h3>  
+
   * It is an attack that forces a user to execute unwanted actions on a web application in which they're currently logged in. These attacks specifically target state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request.
   
   * In Node.js to mitigate this kind of attacks you can use the csrf module. As it is quite low-level, there are wrappers for different frameworks as well.
