@@ -24,7 +24,7 @@
       
 <h3>Set HTTP headers appropriately</h3>
 
-   * Install Package like Helmet
+   * Install Package like [Helmet](https://www.npmjs.com/package/helmet)
      
          $ npm install --save helmet
    * Use this to manage and hide your <b>headers</b> like <b>x-powered-by</b>  
@@ -41,7 +41,7 @@
    * <b>Content-Security-Policy</b>prevents a wide range of attacks, including Cross-site scripting and other cross-site injections
    
  <h3>Ensure Your dependencies are secure  </h3> 
-  * By instating <b>NSP(Node Security Project)</b> and using .We can check our dependency.<br> 
+  * By instating <b>[NSP(Node Security Project)](https://www.npmjs.com/package/nsp)</b> and using .We can check our dependency.<br> 
            
         $ npm i nsp -g
         $ nsp check
@@ -52,7 +52,7 @@
    
 <h3> Authentication for Brute Force Protection</h3> 
    
-   * To prevent your application from these kind of attacks .We can use [RateLimiter]('https://www.npmjs.com/package/ratelimiter')  
+   * To prevent your application from these kind of attacks .We can use [RateLimiter](https://www.npmjs.com/package/ratelimiter)  
      
             var limit = new Limiter({ id: email, db: db });
      
@@ -62,7 +62,8 @@
      
 <h3> Secure Session Management</h3> 
 
-  * You can use `express-session` package for the same.
+  * You can use [express-session](https://www.npmjs.com/package/express-session) package for the same.
+  * You can use [express-session](https://www.npmjs.com/package/express-session) package for the same.
 
 <h3> Command Injection </h3> 
 
