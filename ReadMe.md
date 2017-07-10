@@ -4,9 +4,10 @@
   * We can Use Free class 1 certificates to implements Https from [StartSSL]('http://www.startssl.com/')
 
 <h3>Cookies Should be Secure</h3>
+   
    * Http Only
           
-           res.cookie('sessionid', '1', { httpOnly: true }); 
+          res.cookie('sessionid', '1', { httpOnly: true }); 
    * Secure 
    
           res.cookie('sessionid', '1', { secure: true }); 
