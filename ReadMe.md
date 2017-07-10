@@ -5,15 +5,20 @@
 
 <h3>Cookies Should be Secure</h3>
    * Http Only
-          ````res.cookie('sessionid', '1', { httpOnly: true }); ````
+          
+           res.cookie('sessionid', '1', { httpOnly: true }); 
    * Secure 
-    `res.cookie('sessionid', '1', { secure: true });`  
+   
+          res.cookie('sessionid', '1', { secure: true }); 
    * Domain
-     `res.cookie('sessionid', '1', { domain : `example.com` });`
+   
+          res.cookie('sessionid', '1', { domain : example.com });
    * Path 
-     `res.cookie('sessionid', '1', { path : `foo/bar` });`
+   
+          res.cookie('sessionid', '1', { path : `foo/bar` });
    * Expire
-      `res.cookie('sessionid', '1', { expires : expiryDate });`
+    
+          res.cookie('sessionid', '1', { expires : expiryDate });
       
 <h3>Set HTTP headers appropriately</h3>
    * Install Package like Helmet
