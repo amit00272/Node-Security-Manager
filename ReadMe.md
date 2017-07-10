@@ -41,6 +41,7 @@
    * <b>Content-Security-Policy</b>prevents a wide range of attacks, including Cross-site scripting and other cross-site injections
    
  <h3>Ensure Your dependencies are secure  </h3> 
+ 
   * By instating [NSP](https://www.npmjs.com/package/nsp) <b>(Node Security Project)</b> and using .We can check our dependency.<br> 
            
         $ npm i nsp -g
